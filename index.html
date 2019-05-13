@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Aplicacao de Ciencia de Dados</title>
+
+    <meta name="description" content="Aplicacao_de_Cienciade_Dados">
+    <meta name="author" content="Vinicius m de Sousa">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        h1, h2, h3 {
+            text-shadow: 7px 7px 10px #000000 !important;
+        }
+
+        div.slides {
+            text-shadow: 3px 3px 1px #1c1e20 !important;
+        }
+        
+        blockquote {
+            background: rgba(180, 180, 180, 0.2);
+        }
+        
+        blockquote {
+            text-align: left;
+            width: 90% !important;
+        }
+
+        div.author {
+            text-align: right;
+            margin-right: 10pt;
+        }
+
+        div.author:before {
+            content: '(';
+        }
+
+        div.author:after {
+            content: ')';
+        }
+
+        section.center p {
+            text-align: center;
+        }
+
+        p img {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+            border: 1px solid #2b2b2b !important;
+        }
+        p {
+            text-align: justify;
+        }
+        .side {
+            text-align: center;
+            margin: 0px !important;
+            padding: 0px !important;
+            border: 0px !important;
+        }
+        .side img { 
+            display: inline;
+            margin: 0px !important;
+            padding: 0px !important;
+            border: 0px !important;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .small {
+            font-size: 32px !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="reveal">
+    <div class="slides">
+
+        <section class="center" data-background-image="images/matrix-2354492.jpg">
+            <h2>Resolvendo Problemas</h2>
+            <h3>com</h3>
+            <h2>Ciência de Dados</h2>
+
+            <p>Vinícius M. de Sousa<br>
+                <a href="https://www.linkedin.com/in/viniciusmsousa/">in/viniciusmsousa/</a><br>
+                <a href="mailto:vinisousa04@gmail.com">&lt;vinisousa04@gmail.com&gt;</a>
+                </p>
+                <small>ACATE/Florianópolis - 14 de Maio de 2019</small> 
+            
+        </section>
+        
+
+        <section>
+            <section data-transition="zoom" data-background="https://media.giphy.com/media/3ov9jU8GoFU0OGcdwc/giphy.gif" data-background-transition="zoom">
+                <h1>Apresentação</h1>
+            </section>
+
+            <section data-background-image="images/matrix-2354492.jpg" data-markdown>
+                ## Sobre mim
+
+                - Nascido em Joinville, 23 anos;
+                - Cristão desde Set/2018;
+                - (Recém) Economista pela Esag/Udesc;
+                - Mestrando em Ciência da Informação no PGCin/Ufsc;
+                - Cientista de Dados na [Meantrix](http://meantrix.com/)
+            </section>
+
+            <section data-markdown class="center" data-background-image="images/matrix-2354492.jpg">
+            ## Plano de Vôo
+
+            - Explosão Informacional
+                - Quanto de informação geramos?;
+                - Como se manter informado?.
+            - Ciência de Dados entra em Ação
+                - Como analisar conteúdo do Youtube;
+                - Análise;
+                - Resultados
+            - Considerações Finais
+            - Q & A
+
+            </section>
+        </section>
+        
+        <section>
+            <section data-transition="zoom" data-background="https://media.giphy.com/media/evQMS6jDEhcwU/giphy.gif" data-background-transition="zoom">
+                <h2>Explosão Informacional</h2>
+                <span style="display: inline-block;" class="fragment fade-up"><h4><span style="display: inline-block;" class="fragment grow"><a href="https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#715db33f60ba">Quanto de informação geramos?</a></span></h4>
+                <h4><span style="display: inline-block;" >Como se manter informado?</span></h4></span>
+            </section>
+            <section data-background-image="images/matrix-2354492.jpg">
+                <h2>Buscas na Internet</h2>
+                <ol>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Em média o Google processa 40.000 pesquisas por segundo (3,5 bilhões por dia);</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Considerando as demais buscas chega-se a 5 Bilhões por dia.</li></span>
+                    
+                </ol>                
+            </section>
+            <section data-background-image="images/matrix-2354492.jpg">
+                <h2>Redes Sociais</h2>
+                <ol>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>527.760 fotos são compartilhadas no snapcaht (minuto);</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Mais de 120 profissionais se cadastram no linkedin (minuto);</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Usuários assistem a 4.146.600 vídeos (minuto);</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>456.000 tweets feitos (minuto);</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>46.740 fotos postadas no Instagram (minuto);</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>1,5 bilhão de usuários ativos no facebook (dia);</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>E a lista segue...</li></span>
+                </ol>
+                
+            </section>
+
+        </section>
+
+
+        <section>
+            <section data-transition="zoom" data-background="https://media.giphy.com/media/evQMS6jDEhcwU/giphy.gif" data-background-transition="zoom">
+                <h2>Explosão Informacional</h2>
+                <h4><span style="display: inline-block;" ><a href="https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/#715db33f60ba">Quanto de informação geramos?</a></span></h4>
+                <h4><span style="display: inline-block;" class="fragment grow">Como se manter informado?</span></h4>
+            </section>
+            <section data-background-image="images/matrix-2354492.jpg">
+                <h3>Explosão Informacional</h3>
+                <span style="display: inline-block;" class="fragment fade-up">Não há como estar bem informado sobre tudo. Deve-se procurar maneiras eficientes de se informar.</span> <span style="display: inline-block;" class="fragment fade-up">E deve-se criar prioridades em relação ao quão informado deve-se estar para determinados grupos.</span> <span style="display: inline-block;" class="fragment fade-up">Como podemos otimizar isso?</span>
+            </section>
+            <section data-background="https://media.giphy.com/media/d3mlE7uhX8KFgEmY/giphy.gif">
+                <h2>Ideia</h2>
+                <span style="display: inline-block;" class="fragment fade-up">Por que não analisar o conteúdo do canal do youtube dos jornais mais lidos do brasil para poder ter uma visão de contexto?</span> <span style="display: inline-block;" class="fragment fade-up">Afinal de contas, o <a href="https://link.springer.com/referenceworkentry/10.1007%2F978-94-024-1202-4_1-1">Youtube é a atualmente o segundo motor de pesquisa mais utilizado da internet</a>. E seus conteúdos tendem a ser mais completos do que jornal escrito.</span>
+            </section>
+            <section data-background-image="images/matrix-2354492.jpg">
+                <h2>Resumo: Qual é o (meu) problema?</h2>
+                    <ol>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Não é possível estar bem informado em todas as ocasiões;</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Portanto deve-se pensar duas coisas: (i) Quais ocasiões temos de estar (muito) bem  informados e (ii) Como otimizar nosso processo informacional quando para sotuações mais gerias;</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Os jornais mais lidos no Brasil são <a href="https://www1.folha.uol.com.br/poder/2019/04/com-crescimento-digital-folha-lidera-circulacao-total-entre-jornais-brasileiros.shtml">Folha e O Globo</a>;</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Vamos, então analisar o conteúdo dos canais do youtube desses jornais.</li></span>
+                </ol>
+                <p class="fragment highlight-red"><span style="display: inline-block;" class="fragment fade-right">E como</span> <span style="display: inline-block;" class="fragment fade-up">podemos</span> <span style="display: inline-block;" class="fragment fade-left">fazer isso?</span></p>
+            </section>
+        </section>
+
+
+        <section>
+            <section data-transition="zoom" data-background="https://media.giphy.com/media/3o6Yg4GUVgIUg3bf7W/giphy.gif" data-background-transition="zoom">
+                <h2>Ciência de Dados entra em Ação</h2>
+                <span style="display: inline-block;" class="fragment fade-up">
+                    <h4><span style="display: inline-block;" class="fragment grow">Como analisar conteúdo do Youtube</span></h4><h4><span style="display: inline-block;" >Análise</span></h4>
+                    <h4><span style="display: inline-block;" >Resultados</span></h4>
+                </span>
+            </section>
+
+            <section data-background-image="images/matrix-2354492.jpg">
+                <h3>Como analisar conteúdo do Youtube</h3>
+                <ol>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Baixar as captions e metadados dos vídeos dos canais: (i) <a href="https://www.youtube.com/channel/UCY-8xcFwlVuy6jmUD1DG1Rg">Folha</a> e <a href="https://www.youtube.com/user/jornaloglobo">O Globo</a>;</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Utilizar NLP nas captions para encontrarmos tópicos;</li></span>
+                    <span style="display: inline-block;" class="fragment fade-up"><li>Utilizar NLP para encontrar posicionamentos dos jornais, bem como verificar qual jornal fala mais sobre qual assunto.</li></span>
+                </ol>
+            </section>
+
+            <section data-transition="zoom" data-background="https://media.giphy.com/media/3o6Yg4GUVgIUg3bf7W/giphy.gif" data-background-transition="zoom">
+                <h2>Ciência de Dados entra em Ação</h2>
+                <h4><span style="display: inline-block;" >Como analisar conteúdo do Youtube</span></h4>
+                <h4><span style="display: inline-block;" class="fragment grow">Análise</span></h4>
+                <h4><span style="display: inline-block;" >Resultados</span></h4>
+            </section>
+
+            <section data-background-iframe="https://ytdl-org.github.io/youtube-dl/index.html" data-background-interactive>
+                    <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>API Youtube-dl</h2>
+                        <p> É uma API open source que permite baixarmos informações sobre os videos: (i) id; (ii) title; (iii) upload_date; (iv) durations; (v) view_count; (vi) like_count; (vii) dislike_count; e (viii) caption.</p>
+                    </div>
+            </section>
+            <section data-background-image="images/youtube_dl_table.JPG">
+                    <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+                        <h2>Dados da API</h2>
+                        <p> <span class="fragment fade-up">Informações de todos os vídeos dos canais da Folha e do O Globo que estavam na plataforma no dia 27 de Abril. 3477 videos, 2828 da Folha e 649 do O Globo.</span> <span class="fragment fade-up">Há um total de 120 milhões views, mais de 2 milhões de likes 3 800 mil dislikes.</span> <span class="fragment fade-up">E 16 dias 9 horas 43 minutos e 10 segundos de conteúdo.</span></p>
+                    </div>
+            </section>
+
+            <section data-background-image="images/matrix-2354492.jpg">
+                <h2><a href="https://cran.r-project.org/web/packages/stm/vignettes/stmVignette.pdf"> Structure Topic Model</a></h2>
+                <span class="fragment fade-up"><small>Aprendizado não supervisionado para encontrar descrições curtas de documentos dentro de coleções de documentos (ajudando na classificação, sumarização, similaridade e relevância dos documentos).</small></span>
+
+                <span class="fragment fade-up">
+                    <body>
+                        <img src="images/STM_generative_process.JPG" alt="Simply Easy Learning">
+                    </body>
+                </span>
+                <span class="fragment fade-up">
+                    <small>Usamos esse métodos para encontrar tópicos.</small>
+                </span>                
+            </section>
+
+
+
+
+
+
+
+            <section data-transition="zoom" data-background="https://media.giphy.com/media/3o6Yg4GUVgIUg3bf7W/giphy.gif" data-background-transition="zoom">
+                <h2>Ciência de Dados entra em Ação</h2>
+                <h4><span style="display: inline-block;" >Como analisar conteúdo do Youtube</span></h4>
+                <h4><span style="display: inline-block;" >Análise</span></h4>
+                <h4><span style="display: inline-block;" class="fragment grow">Resultados</span></h4>          
+            </section>
+
+
+
+
+
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+
+        controls: true,
+        progress: true,
+        history: true,
+
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        slideNumber: 'c/t',
+        showSlideNumber : 'speaker',
+
+
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
